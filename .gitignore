@@ -1,0 +1,25 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+
+# 密钥：只提交 .env.example，真实 key 永远不进仓库
+.env
+.env.local
+.env*.local
+
+# 运行日志与调试转储
+*.log
+research_http.json
+
+# 用户数据：译文库/检索缓存/盲测产物/受版权保护的样本原文
+# 只放行公版示例样本（奥斯汀、法条英译、切斯特顿），保证 scripts/ 可跑
+data/*
+!data/samples
+data/samples/*
+!data/samples/literary.en.txt
+!data/samples/law.en.txt
+!data/samples/prince-saradine-excerpt.txt
+
+# 系统杂物
+.DS_Store
