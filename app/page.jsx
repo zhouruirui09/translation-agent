@@ -367,6 +367,7 @@ export default function Page() {
             <select value={judgeId} onChange={(e) => setJudgeId(e.target.value)} disabled={!!busy}
               style={{ padding: '6px 8px', fontSize: 13, border: '1px solid #d1d5db', borderRadius: 6, background: '#fff' }}>
               {(status?.providers || []).filter((p) => !p.mock).map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
+              {status && status.mode === 'mock' && <option value="deepseek">演示模式（模拟裁判）</option>}
             </select>
             <span title="④ 逐句比较与 ⑤ 质量评估都用它当裁判；裁判是三版译者之一时留意自评偏袒">④⑤ 共用</span>
           </label>
@@ -383,6 +384,7 @@ export default function Page() {
           <select value={judgeId} onChange={(e) => setJudgeId(e.target.value)} disabled={!!busy}
             style={{ padding: '6px 8px', fontSize: 13, border: '1px solid #d1d5db', borderRadius: 6, background: '#fff' }}>
             {(status?.providers || []).filter((p) => !p.mock).map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
+              {status && status.mode === 'mock' && <option value="deepseek">演示模式（模拟裁判）</option>}
           </select>
         </label>
         <button onClick={resetAll} style={btnGhost}>清空</button>
