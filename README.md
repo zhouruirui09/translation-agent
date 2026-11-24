@@ -4,6 +4,8 @@
 
 面向翻译学习者/研究者的真实工作场景设计：模型选择、评分权重、术语约束全部可配置；全程中文界面。
 
+> 🎬 **演示视频**：[Release v1.0](https://github.com/zhouruirui09/translation-agent/releases/tag/v1.0) —— 完整工作流录屏（约 9.4 分钟，附 55MB mp4 下载）。
+
 ## 工作流程
 
 ```mermaid
@@ -67,4 +69,4 @@ scripts/        开发期脚本：模型盲测、检索原型
 
 ## License
 
-待定（建议 MIT，发布前确认）。
+[MIT](LICENSE)
